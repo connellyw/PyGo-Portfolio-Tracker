@@ -24,7 +24,7 @@ jobs:
         go get -u golang.org/x/lint/golint
     - name: Run Go tests
       run: |
-        go test -v -cover ./...
+        go test ./... -cover
     - name: Run Go linters
       run: |
         golint -set_exit_status ./...
